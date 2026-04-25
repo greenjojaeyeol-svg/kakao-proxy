@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   const { query } = req.query;
   if (!query) return res.status(400).json({ error: 'query required' });
 
-  const headers = { Authorization: 'KakaoAK b67c5d797ab1def425ed459c1c7c42c1' };
+  const headers = { Authorization: 'KakaoAK 2fc31a383f6d190a8f058919d1623966' };
 
   // 1차: 주소 검색
   let response = await fetch(
